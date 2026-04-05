@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<?xml-model href="../.venv/Lib/site-packages/pycalphad_xml/database.rng" schematypens="http://relaxng.org/ns/structure/1.0" type="application/xml"?>
+<Database version="0">
+    <ChemicalElement id="CA" mass="40.078" reference_phase="BLANK" H298="0.0" S298="0.0" />
+    <ChemicalElement id="MG" mass="24.305" reference_phase="BLANK" H298="0.0" S298="0.0" />
+    <ChemicalElement id="O" mass="15.999" reference_phase="BLANK" H298="0.0" S298="0.0" />
+    <Species id="CA+2.0" charge="2.0">
+        <ChemicalElement refid="CA" ratio="1.0" />
+    </Species>
+    <Species id="MG+2.0" charge="2.0">
+        <ChemicalElement refid="MG" ratio="1.0" />
+    </Species>
+    <Species id="O-2.0" charge="-2.0">
+        <ChemicalElement refid="O" ratio="1.0" />
+    </Species>
+    <Species id="CAO">
+        <ChemicalElement refid="CA" ratio="1.0" />
+        <ChemicalElement refid="O" ratio="1.0" />
+    </Species>
+    <Species id="MGO">
+        <ChemicalElement refid="MG" ratio="1.0" />
+        <ChemicalElement refid="O" ratio="1.0" />
+    </Species>
+    <Phase id="CAO_S1">
+        <Model type="CEF">
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="CA" />
+                </Site>
+                <Site id="1" ratio="1.0">
+                    <Constituent refid="O" />
+                </Site>
+            </ConstituentArray>
+        </Model>
+        <Parameter type="G">
+            <Order>0</Order>
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="CA" />
+                </Site>
+                <Site id="1" ratio="1.0">
+                    <Constituent refid="O" />
+                </Site>
+            </ConstituentArray>
+            <Interval in="T" lower="298" upper="2845.16">
+                -651262.658 + 376.676564*T + 573572.991*T**(-1.0) - 535.615998*T**0.5 -
+                17163131.3*T**(-2) - 58.7911706*T*ln(T)
+            </Interval>
+            <Interval in="T" lower="2845.16" upper="3500">
+                -676442.671 + 407.120846*T - 62.76*T*ln(T)
+            </Interval>
+        </Parameter>
+    </Phase>
+    <Phase id="CAO_L1">
+        <Model type="CEF">
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="CA" />
+                </Site>
+                <Site id="1" ratio="1.0">
+                    <Constituent refid="O" />
+                </Site>
+            </ConstituentArray>
+        </Model>
+        <Parameter type="G">
+            <Order>0</Order>
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="CA" />
+                </Site>
+                <Site id="1" ratio="1.0">
+                    <Constituent refid="O" />
+                </Site>
+            </ConstituentArray>
+            <Interval in="T" lower="298" upper="2848.16">
+                -571766.658 + 348.735802*T + 573572.991*T**(-1) - 535.615998*T**0.5 -
+                17163131.3*T**(-2) - 58.7911706*T*ln(T)
+            </Interval>
+            <Interval in="T" lower="2848.16" upper="3500">
+                -596946.671 + 379.180084*T - 62.76*T*ln(T)
+            </Interval>
+        </Parameter>
+    </Phase>
+    <Phase id="MGO_S1">
+        <Model type="CEF">
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="MG" />
+                </Site>
+                <Site id="1" ratio="1.0">
+                    <Constituent refid="O" />
+                </Site>
+            </ConstituentArray>
+        </Model>
+        <Parameter type="G">
+            <Order>0</Order>
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="MG" />
+                </Site>
+                <Site id="1" ratio="1.0">
+                    <Constituent refid="O" />
+                </Site>
+            </ConstituentArray>
+            <Interval in="T" lower="298" upper="3097.91">
+                - 611541.379 + 420.064762*T + 310577.002*T**(-1) - 1184.79600*T**0.5
+                - 974102.005*T**(-2) - 61.1096505*T*ln(T)
+            </Interval>
+            <Interval in="T" lower="3097.91" upper="3500">
+                -662387.670 + 462.122764*T - 66.944*T*ln(T)
+            </Interval>
+        </Parameter>
+    </Phase>
+    <Phase id="MGO_L1">
+        <Model type="CEF">
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="MG" />
+                </Site>
+                <Site id="1" ratio="1.0">
+                    <Constituent refid="O" />
+                </Site>
+            </ConstituentArray>
+        </Model>
+        <Parameter type="G">
+            <Order>0</Order>
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="MG" />
+                </Site>
+                <Site id="1" ratio="1.0">
+                    <Constituent refid="O" />
+                </Site>
+            </ConstituentArray>
+            <Interval in="T" lower="298" upper="3097.91">
+                - 554894.205 + 490.908663*T + 1.571092E-03*T**2
+                - 261375.798*T**(-1) - 1184.796*T**0.5 - 974102.005*T**(-2)
+                - 72.7955625*T*ln(T)
+            </Interval>
+            <Interval in="T" lower="3097.91" upper="3500">
+                - 584985.686 + 437.137549*T - 66.944*T*ln(T)
+            </Interval>
+        </Parameter>
+    </Phase>
+    <Phase id="SOLID">
+        <Model type="CEF">
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="CAO" />
+                    <Constituent refid="MGO" />
+                </Site>
+            </ConstituentArray>
+        </Model>
+        <Parameter type="G">
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="CAO" />
+                </Site>
+            </ConstituentArray>
+            <Interval in="T" lower="298" upper="2848.16">-651262.658 + 376.676564*T +
+                573572.991*T**(-1.0) - 535.615998*T**0.5 - 1716313.1*T**(-2) - 58.7911706*T*ln(T)
+            </Interval>
+            <Interval in="T" lower="2848.16" upper="3500">
+                -676442.671 + 407.120846*T - 62.7600000*T*ln(T)
+            </Interval>
+        </Parameter>
+        <Parameter type="G">
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="MGO" />
+                </Site>
+            </ConstituentArray>
+            <Interval in="T" lower="298" upper="3097.91">
+                - 611541.379 + 420.064762*T + 310577.002*T**(-1) - 1184.79600*T**0.5
+                - 974102.005*T**(-2) - 61.1096505*T*ln(T)
+            </Interval>
+            <Interval in="T" lower="3097.91" upper="3500">
+                -662387.670 + 462.122764*T - 66.944*T*ln(T)
+            </Interval>
+        </Parameter>
+        <Parameter type="L">
+            <Order>0</Order>
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="CAO" />
+                    <Constituent refid="MNO" />
+                </Site>
+            </ConstituentArray>
+            <Interval in="T" lower="298.15" upper="6000.0">102420 - 18.410*T</Interval>
+        </Parameter>
+        <Parameter type="L">
+            <Order>1</Order>
+            <ConstituentArray>
+                <Site id="0" ratio="1.0">
+                    <Constituent refid="CAO" />
+                    <Constituent refid="MNO" />
+                </Site>
+            </ConstituentArray>
+            <Interval in="T" lower="298.15" upper="6000.0">-15690</Interval>
+        </Parameter>
+    </Phase>
+    <Phase id="LIQUID">
+        <Model type="MQMQA" version="SUBQ">
+            <ConstituentArray>
+                <Site id="0">
+                    <Constituent refid="CA+2.0" />
+                    <Constituent refid="MG+2.0" />
+                </Site>
+                <Site id="1">
+                    <Constituent refid="O-2.0" />
+                </Site>
+            </ConstituentArray>
+            <ChemicalGroups>
+                <Cations>
+                    <Constituent refid="CA+2.0" groupid="1" />
+                    <Constituent refid="MG+2.0" groupid="2" />
+                </Cations>
+                <Anions>
+                    <Constituent refid="O-2.0" groupid="1" />
+                </Anions>
+            </ChemicalGroups>
+        </Model>
+        <Parameter type="MQMG">
+            <ConstituentArray>
+                <Site refid="0">
+                    <Constituent refid="CA+2.0" />
+                </Site>
+                <Site refid="1">
+                    <Constituent refid="O-2.0" />
+                </Site>
+            </ConstituentArray>
+            <Zeta>6.0</Zeta>
+            <StoichiometricFactors>1.0 1.0 0.0 0.0 0.0</StoichiometricFactors>
+            <Interval in="T" lower="298" upper="2848.16">
+                -571766.658 + 348.735802*T + 573572.991*T**(-1) - 535.615998*T**0.5 -
+                17163131.3*T**(-2) - 58.7911706*T*ln(T)
+            </Interval>
+            <Interval in="T" lower="2848.16" upper="3500">
+                -596946.671 + 379.180084*T - 62.76*T*ln(T)
+            </Interval>
+        </Parameter>
+        <Parameter type="MQMG">
+            <ConstituentArray>
+                <Site refid="0">
+                    <Constituent refid="MG+2.0" />
+                </Site>
+                <Site refid="1">
+                    <Constituent refid="O-2.0" />
+                </Site>
+            </ConstituentArray>
+            <Zeta>6.0</Zeta>
+            <StoichiometricFactors>1.0 1.0 0.0 0.0 0.0</StoichiometricFactors>
+            <Interval in="T" lower="298" upper="3097.91">
+                - 554894.205 + 490.908663*T + 1.571092E-03*T**2
+                - 261375.798*T**(-1) - 1184.796*T**0.5 - 974102.005*T**(-2)
+                - 72.7955625*T*ln(T)
+            </Interval>
+            <Interval in="T" lower="3097.91" upper="3500">
+                - 584985.686 + 437.137549*T - 66.944*T*ln(T)
+            </Interval>
+        </Parameter>
+        <Parameter type="MQMZ">
+            <ConstituentArray>
+                <Site refid="0">
+                    <Constituent refid="CA+2.0" />
+                    <Constituent refid="CA+2.0" />
+                </Site>
+                <Site refid="1">
+                    <Constituent refid="O-2.0" />
+                    <Constituent refid="O-2.0" />
+                </Site>
+            </ConstituentArray>
+            <Coordinations>6.0 6.0 6.0 6.0</Coordinations>
+        </Parameter>
+        <Parameter type="MQMZ">
+            <ConstituentArray>
+                <Site refid="0">
+                    <Constituent refid="MG+2.0" />
+                    <Constituent refid="MG+2.0" />
+                </Site>
+                <Site refid="1">
+                    <Constituent refid="O-2.0" />
+                    <Constituent refid="O-2.0" />
+                </Site>
+            </ConstituentArray>
+            <Coordinations>6.0 6.0 6.0 6.0</Coordinations>
+        </Parameter>
+        <Parameter type="MQMZ">
+            <ConstituentArray>
+                <Site refid="0">
+                    <Constituent refid="CA+2.0" />
+                    <Constituent refid="MG+2.0" />
+                </Site>
+                <Site refid="1">
+                    <Constituent refid="O-2.0" />
+                    <Constituent refid="O-2.0" />
+                </Site>
+            </ConstituentArray>
+            <Coordinations>6.0 6.0 6.0 6.0</Coordinations>
+        </Parameter>
+        <Parameter type="MQMX"> 45329 <ConstituentArray>
+                <Site refid="0">
+                    <Constituent refid="CA+2.0" />
+                    <Constituent refid="MG+2.0" />
+                </Site>
+                <Site refid="1">
+                    <Constituent refid="O-2.0" />
+                    <Constituent refid="O-2.0" />
+                </Site>
+            </ConstituentArray>
+            <MixingCode
+                type="G" />
+                <Exponents>0.0 0.0 0.0 0.0</Exponents>
+        </Parameter>
+        <Parameter type="MQMX"> -30583 <ConstituentArray>
+                <Site refid="0">
+                    <Constituent refid="CA+2.0" />
+                    <Constituent refid="MG+2.0" />
+                </Site>
+                <Site refid="1">
+                    <Constituent refid="O-2.0" />
+                    <Constituent refid="O-2.0" />
+                </Site>
+            </ConstituentArray>
+            <MixingCode
+                type="G" />
+                <Exponents>1.0 0.0 0.0 0.0</Exponents>
+        </Parameter>
+    </Phase>
+</Database>
