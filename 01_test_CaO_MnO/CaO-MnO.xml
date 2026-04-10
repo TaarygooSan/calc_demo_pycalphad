@@ -286,7 +286,7 @@
             </ConstituentArray>
             <Coordinations>6.0 6.0 6.0 6.0</Coordinations>
         </Parameter>
-        <Parameter type="MQMX"> 27006 <ConstituentArray>
+        <Parameter type="MQMX"> 27006/6 <ConstituentArray>
                 <Site refid="0">
                     <Constituent refid="CA+2.0" />
                     <Constituent refid="MN+2.0" />

@@ -183,7 +183,7 @@
             <ConstituentArray>
                 <Site id="0" ratio="1.0">
                     <Constituent refid="CAO" />
-                    <Constituent refid="MNO" />
+                    <Constituent refid="MGO" />
                 </Site>
             </ConstituentArray>
             <Interval in="T" lower="298.15" upper="6000.0">102420 - 18.410*T</Interval>
@@ -193,7 +193,7 @@
             <ConstituentArray>
                 <Site id="0" ratio="1.0">
                     <Constituent refid="CAO" />
-                    <Constituent refid="MNO" />
+                    <Constituent refid="MGO" />
                 </Site>
             </ConstituentArray>
             <Interval in="T" lower="298.15" upper="6000.0">-15690</Interval>
@@ -298,7 +298,7 @@
             </ConstituentArray>
             <Coordinations>6.0 6.0 6.0 6.0</Coordinations>
         </Parameter>
-        <Parameter type="MQMX"> 45329 <ConstituentArray>
+        <Parameter type="MQMX"> 45329/6 <ConstituentArray>
                 <Site refid="0">
                     <Constituent refid="CA+2.0" />
                     <Constituent refid="MG+2.0" />
@@ -312,7 +312,7 @@
                 type="G" />
                 <Exponents>0.0 0.0 0.0 0.0</Exponents>
         </Parameter>
-        <Parameter type="MQMX"> -30583 <ConstituentArray>
+        <Parameter type="MQMX"> -30583/6 <ConstituentArray>
                 <Site refid="0">
                     <Constituent refid="CA+2.0" />
                     <Constituent refid="MG+2.0" />

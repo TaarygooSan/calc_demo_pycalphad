@@ -1,0 +1,126 @@
+<Phase id="LIQUID">
+    <Model type="MQM">
+        <ConstituentArray>
+            <Site id="0">
+                <Constituent refid="CAO" />
+                <Constituent refid="MNO" />
+            </Site>
+        </ConstituentArray>
+    </Model>
+    <Parameter type="MQMMQMZ">
+        <ConstituentArray>
+            <Site>
+                <Constituent refid="CAO" />
+                <Constituent refid="MNO" />
+            </Site>
+        </ConstituentArray>
+        <Coordinations>
+            <Z>
+                <base>CAO CAO</base>
+                <surr>CAO</surr>
+                <value>6.0</value>
+            </Z>
+            <Z>
+                <base>MNO MNO</base>
+                <surr>MNO</surr>
+                <value>6.0</value>
+            </Z>
+            <Z>
+                <base>CAO MNO</base>
+                <surr>CAO</surr>
+                <value>6.0</value>
+            </Z>
+            <Z>
+                <base>CAO MNO</base>
+                <surr>MNO</surr>
+                <value>6.0</value>
+            </Z>
+        </Coordinations>
+    </Parameter>
+    <Parameter type="MQMMQMZ">
+        <ConstituentArray>
+            <Site>
+                <Constituent refid="CAO" />
+                <Constituent refid="CAO" />
+            </Site>
+        </ConstituentArray>
+        <Coordinations>
+            <Z>
+                <base>CAO CAO</base>
+                <surr>CAO</surr>
+                <value>6.0</value>
+            </Z>
+        </Coordinations>
+    </Parameter>
+    <Parameter type="MQMMQMZ">
+        <ConstituentArray>
+            <Site>
+                <Constituent refid="MNO" />
+                <Constituent refid="MNO" />
+            </Site>
+        </ConstituentArray>
+        <Coordinations>
+            <Z>
+                <base>MNO MNO</base>
+                <surr>MNO</surr>
+                <value>6.0</value>
+            </Z>
+        </Coordinations>
+    </Parameter>
+    <Parameter type="MQMMQMG">
+        <ConstituentArray>
+            <Site>
+                <Constituent refid="CAO" />
+                <Constituent refid="CAO" />
+            </Site>
+        </ConstituentArray>
+        <Interval in="T" lower="298" upper="2848.16">
+            (-571766.658 + 348.735802*T + 573572.991*T**(-1) - 535.615998*T**0.5 -
+            1716313.1*T**(-2) - 58.7911706*T*ln(T)) / 3
+        </Interval>
+        <Interval in="T" lower="2848.16" upper="3500">
+            (-596946.671 + 379.180084*T - 62.7600000*T*ln(T)) / 3
+        </Interval>
+    </Parameter>
+    <Parameter type="MQMMQMG">
+        <ConstituentArray>
+            <Site>
+                <Constituent refid="MNO" />
+                <Constituent refid="MNO" />
+            </Site>
+        </ConstituentArray>
+        <Interval in="T" lower="298" upper="2115.15">
+            (-345990.970 + 230.277102*T - 4.058480000E-03*T**2 + 184096.000*T**(-1) -
+            46.4842400*T*ln(T)) / 3
+        </Interval>
+        <Interval in="T" lower="2115.15" upper="3500">
+            (-357660.607 + 335.854487*T - 60.6680000*T*ln(T)) / 3
+        </Interval>
+    </Parameter>
+    <Parameter type="MQMMQMG">
+        <ConstituentArray>
+            <Site>
+                <Constituent refid="CAO" />
+                <Constituent refid="MNO" />
+            </Site>
+        </ConstituentArray>
+        <Interval in="T" lower="298.15" upper="2115.15">
+            27006/2 +
+            (-571766.658 + 348.735802*T + 573572.991*T**(-1) - 535.615998*T**0.5 -
+            1716313.1*T**(-2) - 58.7911706*T*ln(T)) / 6 +
+            (-345990.970 + 230.277102*T - 4.058480000E-03*T**2 + 184096.000*T**(-1) -
+            46.4842400*T*ln(T)) / 6
+        </Interval>
+        <Interval in="T" lower="2115.15" upper="2848.16">
+            27006/2 +
+            (-571766.658 + 348.735802*T + 573572.991*T**(-1) - 535.615998*T**0.5 -
+            1716313.1*T**(-2) - 58.7911706*T*ln(T)) / 6 +
+            (-357660.607 + 335.854487*T - 60.6680000*T*ln(T)) / 6
+        </Interval>
+        <Interval in="T" lower="2848.16" upper="3500">
+            27006/2 +
+            (-596946.671 + 379.180084*T - 62.7600000*T*ln(T)) / 6 +
+            (-357660.607 + 335.854487*T - 60.6680000*T*ln(T)) / 6
+        </Interval>
+    </Parameter>
+</Phase>
